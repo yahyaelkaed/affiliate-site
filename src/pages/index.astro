@@ -1,0 +1,338 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AffiliateButton from '../components/AffiliateButton.astro';
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PowerStation Hub",
+  "url": "https://powerstationhub.com",
+  "description": "Reviews and comparisons of the best portable power stations and solar generators.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PowerStation Hub"
+  }
+};
+
+const topPowerStations = [
+  {
+    rank: "Rank #1",
+    badgeText: "Best Overall",
+    score: "9.8",
+    ratingText: "4.9 out of 5",
+    name: "EcoFlow DELTA 2 Max",
+    capacity: "2,048 Wh (Expandable to 6kWh)",
+    output: "2,400W Continuous AC (4,800W Surge)",
+    chemistry: "LiFePO4 (3,000+ Cycles)",
+    weight: "50.7 lbs",
+    solarInput: "1,000W Max Solar Input",
+    rechargeTime: "80 minutes (AC Wall)",
+    priceRange: "$1,299 - $1,699",
+    summary: "High-capacity power station with fast 80-minute AC wall charging and expandable capacity up to 6,144Wh. Ideal for home emergency backup and heavy RV use.",
+    pros: ["Expandable battery capacity", "Fast 80-minute AC charging", "Dual solar MPPT inputs"],
+    cons: ["Weight (50.7 lbs)"],
+    amazonUrl: "https://www.amazon.com/dp/B0C8V2Y3B2?tag=powerstation-20",
+    isTop: true
+  },
+  {
+    rank: "Rank #2",
+    badgeText: "Best Compact",
+    score: "9.5",
+    ratingText: "4.8 out of 5",
+    name: "Anker SOLIX C1000",
+    capacity: "1,056 Wh",
+    output: "1,800W Continuous AC (2,400W Surge)",
+    chemistry: "LiFePO4 (3,000+ Cycles)",
+    weight: "28.4 lbs",
+    solarInput: "600W Max Solar Input",
+    rechargeTime: "58 minutes (HyperFlash)",
+    priceRange: "$649 - $799",
+    summary: "Recharges to 100% in 58 minutes. Compact footprint and dual handles make it a great choice for camping, road trips, and essential backup.",
+    pros: ["Fast 58-minute recharge", "Compact design with dual handles", "Quiet operation"],
+    cons: ["Fixed capacity"],
+    amazonUrl: "https://www.amazon.com/dp/B0C8V2Y3B2?tag=powerstation-20",
+    isTop: false
+  },
+  {
+    rank: "Rank #3",
+    badgeText: "Best UPS Function",
+    score: "9.4",
+    ratingText: "4.7 out of 5",
+    name: "BLUETTI AC180",
+    capacity: "1,152 Wh",
+    output: "1,800W Continuous AC (2,700W Power Lift)",
+    chemistry: "LiFePO4 (3,500+ Cycles)",
+    weight: "35.2 lbs",
+    solarInput: "500W Max Solar Input",
+    rechargeTime: "45 mins to 80%",
+    priceRange: "$699 - $849",
+    summary: "Features a 20ms Uninterruptible Power Supply (UPS) takeover time, making it ideal for desktop computers, CPAP machines, and electronics.",
+    pros: ["20ms UPS takeover time", "3,500+ battery cycle life", "Reliable inverter output"],
+    cons: ["Heavier than 1kWh competitors"],
+    amazonUrl: "https://www.amazon.com/dp/B0C8V2Y3B2?tag=powerstation-20",
+    isTop: false
+  },
+  {
+    rank: "Rank #4",
+    badgeText: "Lightweight Pick",
+    score: "9.2",
+    ratingText: "4.6 out of 5",
+    name: "Jackery Explorer 1000 v2",
+    capacity: "1,070 Wh",
+    output: "1,500W Continuous AC (3,000W Surge)",
+    chemistry: "LiFePO4 (4,000 Cycles)",
+    weight: "23.8 lbs",
+    solarInput: "400W Max Solar Input",
+    rechargeTime: "60 minutes (AC Wall)",
+    priceRange: "$599 - $749",
+    summary: "Lightweight 1kWh power station with long-life LiFePO4 cells and a foldable handle for easy transport.",
+    pros: ["Light weight at 23.8 lbs", "4,000 cycle battery lifespan", "Foldable handle design"],
+    cons: ["Lower solar input capacity"],
+    amazonUrl: "https://www.amazon.com/dp/B0C8V2Y3B2?tag=powerstation-20",
+    isTop: false
+  },
+  {
+    rank: "Rank #5",
+    badgeText: "Rugged Build",
+    score: "9.0",
+    ratingText: "4.5 out of 5",
+    name: "Goal Zero Yeti 1000X",
+    capacity: "983 Wh",
+    output: "1,500W Continuous AC (3,000W Surge)",
+    chemistry: "NMC Lithium-ion",
+    weight: "31.7 lbs",
+    solarInput: "600W Max Solar Input",
+    rechargeTime: "2 hours (AC Wall)",
+    priceRange: "$899 - $1,099",
+    summary: "Solid aluminum chassis with seven output ports and regulated 12V DC power for 12V appliances and field gear.",
+    pros: ["Regulated 12V DC output", "Durable aluminum construction", "Clean sine wave output"],
+    cons: ["NMC cell chemistry"],
+    amazonUrl: "https://www.amazon.com/dp/B0C8V2Y3B2?tag=powerstation-20",
+    isTop: false
+  }
+];
+---
+
+<BaseLayout 
+  title="The Best Portable Power Stations of 2026 - Independent Reviews"
+  description="In-depth reviews and comparisons of top portable power stations including EcoFlow, Anker, Bluetti, Jackery, and Goal Zero."
+  jsonLd={websiteSchema}
+>
+  <!-- Hero Section -->
+  <section class="bg-white border-b border-slate-200 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-4">
+        
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          The Best Portable Power Stations of 2026
+        </h1>
+
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          Detailed reviews, capacity benchmarks, and buying advice for home emergency backup, camping, and off-grid power.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a 
+            href="/blog/top-5-portable-power-stations" 
+            class="bg-orange-600 hover:bg-orange-700 text-white font-bold text-sm px-5 py-3 rounded-lg shadow-sm transition-colors no-underline"
+          >
+            Read Top 5 Comparison Review &rarr;
+          </a>
+          <a 
+            href="#buying-guide" 
+            class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-medium text-sm px-5 py-3 rounded-lg border border-slate-300 transition-colors no-underline"
+          >
+            Buying Guide
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Comparison Grid Section -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-slate-200 pb-4 gap-2">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Top Rated Portable Power Stations</h2>
+          <p class="text-slate-500 text-sm mt-1">Ranked by capacity, recharge speed, battery longevity, and continuous output.</p>
+        </div>
+        <a href="/blog/top-5-portable-power-stations" class="text-orange-600 font-semibold hover:underline text-sm">
+          Full Review Article &rarr;
+        </a>
+      </div>
+
+      <!-- Power Station List Cards -->
+      <div class="space-y-6">
+        {topPowerStations.map((item) => (
+          <div class={`bg-white border rounded-xl p-6 sm:p-8 shadow-sm transition-all ${
+            item.isTop ? 'border-orange-500 ring-1 ring-orange-500/20' : 'border-slate-200'
+          }`}>
+
+            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+              
+              <!-- Left Column Info -->
+              <div class="space-y-4 lg:max-w-3xl flex-grow">
+                
+                <!-- Rank Header -->
+                <div class="flex items-center gap-3">
+                  <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-slate-900 text-white">
+                    {item.rank}
+                  </span>
+                  <span class="text-xs font-semibold px-2.5 py-1 rounded bg-orange-100 text-orange-800">
+                    {item.badgeText}
+                  </span>
+                  <span class="text-xs text-slate-500 font-medium ml-auto sm:ml-0">
+                    Rating: {item.ratingText} ({item.score}/10)
+                  </span>
+                </div>
+
+                <!-- Title & Description -->
+                <div>
+                  <h3 class="text-2xl font-bold text-slate-900">
+                    {item.name}
+                  </h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                    {item.summary}
+                  </p>
+                </div>
+
+                <!-- Specifications Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs pt-1">
+                  <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                    <span class="text-slate-500 block font-medium">Capacity</span>
+                    <span class="font-bold text-slate-900 mt-0.5 block">{item.capacity}</span>
+                  </div>
+                  <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                    <span class="text-slate-500 block font-medium">Continuous Output</span>
+                    <span class="font-bold text-slate-900 mt-0.5 block">{item.output}</span>
+                  </div>
+                  <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                    <span class="text-slate-500 block font-medium">Battery Chemistry</span>
+                    <span class="font-bold text-slate-900 mt-0.5 block">{item.chemistry}</span>
+                  </div>
+                  <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                    <span class="text-slate-500 block font-medium">Weight</span>
+                    <span class="font-bold text-slate-900 mt-0.5 block">{item.weight}</span>
+                  </div>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">
+                  <div class="space-y-1">
+                    <span class="font-bold text-slate-900 uppercase tracking-wider text-[10px]">Pros</span>
+                    <ul class="space-y-1 text-slate-700">
+                      {item.pros.map(pro => (
+                        <li class="flex items-center gap-1.5">
+                          <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                          <span>{pro}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="space-y-1">
+                    <span class="font-bold text-slate-900 uppercase tracking-wider text-[10px]">Cons</span>
+                    <ul class="space-y-1 text-slate-600">
+                      {item.cons.map(con => (
+                        <li class="flex items-center gap-1.5">
+                          <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+                          <span>{con}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Pricing Callout -->
+              <div class="flex flex-col items-stretch justify-center gap-4 lg:w-72 bg-slate-50 p-5 rounded-lg border border-slate-200 self-stretch lg:self-center">
+                <div class="text-center">
+                  <span class="text-xs text-slate-500 font-medium block">Retail Price Range</span>
+                  <span class="text-2xl font-extrabold text-slate-900 mt-0.5 block">{item.priceRange}</span>
+                </div>
+
+                <AffiliateButton 
+                  href={item.amazonUrl} 
+                  text="Check Price on Amazon" 
+                  subtext="Direct Amazon listing"
+                  variant={item.isTop ? 'primary' : 'secondary'}
+                  class="w-full"
+                />
+              </div>
+
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Editorial Promo Banner -->
+  <section class="py-8 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 max-w-2xl">
+          <h3 class="text-xl font-bold text-slate-900">Read Our In-Depth Comparison Article</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Detailed specifications breakdown, refrigerator runtime calculations, and solar input benchmark tables.
+          </p>
+        </div>
+        <a 
+          href="/blog/top-5-portable-power-stations"
+          class="bg-orange-600 hover:bg-orange-700 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-sm transition-colors shrink-0 no-underline"
+        >
+          Read Full Article &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buying Guide Section -->
+  <section id="buying-guide" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div>
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Portable Power Station Buying Guide</h2>
+        <p class="text-slate-600 text-sm mt-1">Important factors to evaluate when selecting a portable power station.</p>
+      </div>
+
+      <div class="space-y-6 text-slate-800 text-sm sm:text-base leading-relaxed">
+        
+        <div class="space-y-2 border-b border-slate-200 pb-6">
+          <h3 class="text-lg font-bold text-slate-900">1. Battery Chemistry: LiFePO4 vs. NMC</h3>
+          <p>
+            Modern power stations use <strong>LiFePO4 (Lithium Iron Phosphate)</strong> cells, which provide 3,000 to 4,000 charge cycles before capacity degrades to 80%. This offers a lifespan of 10+ years under regular use. Traditional NMC lithium-ion cells typically last 500 to 800 cycles.
+          </p>
+        </div>
+
+        <div class="space-y-2 border-b border-slate-200 pb-6">
+          <h3 class="text-lg font-bold text-slate-900">2. Estimating Appliance Runtime</h3>
+          <p>
+            Use this calculation to estimate how long a power station will run an appliance:
+          </p>
+          <div class="bg-slate-100 p-4 rounded border border-slate-200 font-mono text-xs sm:text-sm text-slate-900 my-2">
+            Runtime (Hours) = (Battery Capacity in Wh &times; 0.85 Inverter Efficiency) &divide; Appliance Wattage (W)
+          </div>
+          <p class="text-xs text-slate-500">
+            For example, a 1,000Wh power station running a 100W refrigerator will operate for approximately 8.5 hours of continuous compressor runtime.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold text-slate-900">3. Continuous AC Output & Surge Headroom</h3>
+          <p>
+            Ensure the continuous AC output rating matches the power draw of your appliances. Appliances with electric motors (like refrigerators, pumps, and power tools) require higher surge wattage at startup.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
