@@ -212,5 +212,50 @@ export const kitchenProducts: Product[] = [
       "/images/products/circle-joy-gravity-grinder/Gemini_Generated_Image_neptzuneptzunept.jfif"
     ],
     isTop: false
+  },
+  {
+    id: "upgrade-broom-and-dustpan-set",
+    slug: "upgrade-broom-and-dustpan-set-with-comb-teeth",
+    category: "Kitchen Finds",
+    rank: "Home Essential Pick",
+    badgeText: "Built-in Comb Teeth",
+    score: "4.8",
+    ratingText: "4.8 out of 5",
+    reviewCount: "14,630",
+    price: "$21.59",
+    originalPrice: "$29.99",
+    name: "Upgraded Long Handle Broom and Dustpan Set with Comb Teeth",
+    fullName: "Upgraded Broom and Dustpan Set for Home, Kitchen, Room, Office & Lobby Use - Standing Dustpan with Built-in Comb Teeth & Extendable Handle",
+    capacity: "Full Floor Coverage Sweeping",
+    material: "Heavy-Duty Stainless Steel Handles & Pet Bristles",
+    functionality: "Self-Cleaning Comb Teeth & 180° Rotating Broom Head",
+    compatibility: "Hardwood Floors, Tiles, Laminate, Kitchen, Office, Garage",
+    cleaning: "Handy Stand-Up Storage Clip & Easy Wipe Clean",
+    affiliateUrl: "https://amzn.to/4iKQNdR",
+    summary: "Keep your kitchen floors spotless without bending over! Features an upgraded long-handle standing dustpan with built-in scraper comb teeth that easily scrape pet hair and human hair directly off the broom bristles into the bin.",
+    descriptionParagraphs: [
+      "Make daily kitchen cleaning effortless with the Upgraded Broom and Dustpan Set. Designed with an extra-long adjustable stainless steel handle, this set lets you sweep comfortably upright without straining your back or bending over.",
+      "The dustpan features integrated comb scraper teeth that clean trapped hair and dust bunnies off the 4-layer resilient broom bristles in one pull—keeping your hands completely clean. The flexible rubber lip seals flat against hard floors to ensure no dirt slips underneath.",
+      "For compact storage, the dustpan snaps shut vertically and clips securely onto the broom handle, fitting neatly into narrow cabinet corners, pantries, or beside the refrigerator."
+    ],
+    highlights: [
+      "Built-In Comb Scraper Teeth: Easily removes pet hair and lint from bristles without using hands",
+      "Flexible Rubber Dustpan Lip: Lays flush against floors so zero dust slips underneath",
+      "Upright Extendable Handle: Ergonomic long pole eliminates back strain and awkward bending",
+      "Space-Saving Standing Storage: Vertical lock-up dustpan clips broom together for tight spaces",
+      "Durable 4-Layer Bristles: Firm yet gentle bristles sweep kitchen tile, wood, and laminate safely"
+    ],
+    specs: [
+      { label: "Broom Height", value: "52 inches (Extendable)" },
+      { label: "Dustpan Lip Width", value: "11.8 inches" },
+      { label: "Material", value: "Stainless Steel, ABS & PET Bristles" },
+      { label: "Special Feature", value: "Self-Cleaning Teeth & Vertical Storage Lock" },
+      { label: "Target Surfaces", value: "Hardwood, Tile, Laminate, Vinyl Floors" }
+    ],
+    images: [
+      "/images/products/upgrade-broom-dustpan-set/Gemini_Generated_Image_1i11gg1i11gg1i11.jfif",
+      "/images/products/upgrade-broom-dustpan-set/Gemini_Generated_Image_j5tgmwj5tgmwj5tg.jfif"
+    ],
+    isTop: false
   }
 ];
