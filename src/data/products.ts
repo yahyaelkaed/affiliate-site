@@ -160,10 +160,9 @@ export const kitchenProducts: Product[] = [
       { label: "Color Options", value: "Clean Modern White" }
     ],
     images: [
-      "/images/products/jar-opener-weak-hands/main-product.jpg",
+      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_nqaw0jnqaw0jnqaw.jfif",
       "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_t9uwhvt9uwhvt9uw.jfif",
-      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_2udojb2udojb2udo.jfif",
-      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_nqaw0jnqaw0jnqaw.jfif"
+      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_2udojb2udojb2udo.jfif"
     ],
     isTop: false
   },
