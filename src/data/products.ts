@@ -165,5 +165,52 @@ export const kitchenProducts: Product[] = [
       "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_nqaw0jnqaw0jnqaw.jfif"
     ],
     isTop: false
+  },
+  {
+    id: "circle-joy-electric-gravity-grinder",
+    slug: "circle-joy-electric-gravity-salt-and-pepper-grinder-set",
+    category: "Kitchen Finds",
+    rank: "Smart Tech Pick",
+    badgeText: "Gravity Automatic Tilt",
+    score: "4.8",
+    ratingText: "4.8 out of 5",
+    reviewCount: "8,350",
+    price: "$27.99",
+    originalPrice: "$34.99",
+    name: "CIRCLE JOY Automatic Gravity Electric Salt & Pepper Grinder Set",
+    fullName: "CIRCLE JOY Electric Gravity Salt and Pepper Grinder Set - Automatic Salt Pepper Mill Grinder with Adjustable Coarseness & Warm LED Light",
+    capacity: "2.3 oz (70ml) Spice Chamber",
+    material: "Brushed Stainless Steel & Rust-Free Ceramic Core",
+    functionality: "Gravity Sensor One-Handed Automatic Grinding",
+    compatibility: "Black Pepper, Sea Salt, Himalayan Pink Salt, Spices",
+    cleaning: "Removable Spice Chamber & Dry Brush Clean",
+    affiliateUrl: "https://amzn.to/4646eqf",
+    summary: "Experience effortless one-handed seasoning with gravity sensor technology. Simply tilt upside down to activate fresh automated grinding with built-in warm LED light and adjustable ceramic coarseness settings.",
+    descriptionParagraphs: [
+      "Elevate your dining and meal prep experience with the CIRCLE JOY Electric Gravity Salt & Pepper Grinder Set. Engineered with advanced gravity-sensing activation, simply tilt the grinder upside down to automatically trigger precision grinding—no button pressing or manual twisting required.",
+      "Equipped with an adjustable ceramic grinding core, you can easily customize spice coarseness from fine powder to coarse cracked pepper by turning the top knob. A built-in warm LED light automatically illuminates your food as you season, ensuring precise portioning even in dim lighting.",
+      "Featuring a sleek brushed stainless steel housing and a clear acrylic spice window, these battery-operated grinders are effortless to refill and look stunning on any kitchen countertop or dining table."
+    ],
+    highlights: [
+      "Gravity Sensor Tilt Operation: Tilt upside down for instant one-handed automatic grinding",
+      "Adjustable Ceramic Core: Easily adjust coarseness from fine to coarse with a simple twist",
+      "Warm LED Illuminating Light: Soft light automatically turns on so you never over-season",
+      "Premium Stainless Steel Build: Durable, rust-resistant housing with clear spice window",
+      "Wide Top Refill Opening: Easy to refill sea salt, peppercorns, and dried herbs without spills"
+    ],
+    specs: [
+      { label: "Grinding Mechanism", value: "Heavy-Duty Ceramic Core" },
+      { label: "Material", value: "Stainless Steel & Food-Grade Acrylic" },
+      { label: "Power Source", value: "Battery Powered (AAA)" },
+      { label: "Capacity", value: "70 ml / 2.3 oz per bottle" },
+      { label: "Special Feature", value: "Gravity Tilt Activation & Built-in LED" }
+    ],
+    images: [
+      "/images/products/circle-joy-gravity-grinder/Gemini_Generated_Image_desir8desir8desi.jfif",
+      "/images/products/circle-joy-gravity-grinder/Gemini_Generated_Image_fu6pxpfu6pxpfu6p.jfif",
+      "/images/products/circle-joy-gravity-grinder/Gemini_Generated_Image_iy4hkwiy4hkwiy4h.jfif",
+      "/images/products/circle-joy-gravity-grinder/Gemini_Generated_Image_neptzuneptzunept.jfif"
+    ],
+    isTop: false
   }
 ];
