@@ -119,5 +119,51 @@ export const kitchenProducts: Product[] = [
       "/images/products/fullstar-vegetable-chopper/Gemini_Generated_Image_unkv1eunkv1eunkv.jfif"
     ],
     isTop: false
+  },
+  {
+    id: "jar-opener-weak-hands",
+    slug: "jar-opener-for-weak-hands-seniors-arthritic",
+    category: "Kitchen Finds",
+    rank: "Essential Accessibility Pick",
+    badgeText: "Effortless Lid Opener",
+    score: "4.9",
+    ratingText: "4.9 out of 5",
+    reviewCount: "18,920",
+    price: "$9.99",
+    originalPrice: "$14.99",
+    name: "Under Cabinet Jar Opener for Weak Hands & Seniors",
+    fullName: "Jar Opener for Weak Hands & Seniors with Arthritis - Easy Under Cabinet Jar & Bottle Opener Tool for Any Lid Size",
+    capacity: "Fits Any Size Lid (0.5 to 4 inches)",
+    material: "Heavy-Duty Dual Steel Teeth & Durable ABS Frame",
+    functionality: "V-Shape Leverage Grip for One-Handed Opening",
+    compatibility: "Mason Jars, Pickle Jars, Water Bottles, Medicine Caps, Vacuum Seals",
+    cleaning: "Maintenance Free & Concealed Installation",
+    affiliateUrl: "https://amzn.to/4xzAyox",
+    summary: "Say goodbye to stubborn jar lids! Mounts discreetly under cabinets to easily pop open vacuum seals and twisted caps of any size with a simple turn, perfect for seniors, weak hands, or arthritic wrists.",
+    descriptionParagraphs: [
+      "Opening stubborn pickle jars, vacuum-sealed sauces, and tight bottle caps is completely effortless with this under-cabinet jar opener. Designed specifically for individuals with weak hands, seniors, and anyone living with arthritis or wrist strain.",
+      "Featuring a unique V-shaped design lined with heavy-duty dual steel grip teeth, it locks securely onto any lid size from small nail polish caps to large 4-inch pickle jars. Simply insert the lid, press lightly, and twist using basic lever force.",
+      "Installs in minutes out of sight beneath your kitchen cabinet or shelf with the included peel-and-stick adhesive tape and sturdy mounting screws, preserving your clean countertop space."
+    ],
+    highlights: [
+      "Effortless Leverage: Opens vacuum sealed jars and stubborn caps with a simple twist",
+      "Designed for Weak Hands: Ideal for seniors, arthritis sufferers, and children",
+      "Universal Size Fit: V-groove grips lid diameters from 0.5 inches up to 4 inches",
+      "Under-Cabinet Mounting: Keeps countertops clutter-free while staying immediately accessible",
+      "Heavy-Duty Steel Teeth: Durable grip teeth bite into metal and plastic lids without slipping"
+    ],
+    specs: [
+      { label: "Grip Range", value: "0.5 in - 4.0 in (Universal fit)" },
+      { label: "Teeth Material", value: "Hardened Carbon Steel" },
+      { label: "Installation Method", value: "Under-cabinet mounting (Screws & Adhesive included)" },
+      { label: "Weight", value: "5.3 oz" },
+      { label: "Color Options", value: "Clean Modern White" }
+    ],
+    images: [
+      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_t9uwhvt9uwhvt9uw.jfif",
+      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_2udojb2udojb2udo.jfif",
+      "/images/products/jar-opener-weak-hands/Gemini_Generated_Image_nqaw0jnqaw0jnqaw.jfif"
+    ],
+    isTop: false
   }
 ];
