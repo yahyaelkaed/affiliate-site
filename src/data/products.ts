@@ -35,8 +35,8 @@ export const kitchenProducts: Product[] = [
     score: "4.9",
     ratingText: "4.9 out of 5",
     reviewCount: "2,480",
-    price: "$15.99",
-    originalPrice: "$22.99",
+    price: "$9.99",
+    originalPrice: "$15.99",
     name: "TrendPlain 16oz (470ml) Glass Olive Oil Sprayer & Dispenser",
     fullName: "TrendPlain 16oz/470ml Glass Olive Oil Sprayer for Cooking – 2 in 1 Olive Oil Dispenser Bottle for Kitchen Gadgets and Air Fryer Accessories, Salad, BBQ - Black",
     capacity: "16 oz / 470 ml",
@@ -72,5 +72,52 @@ export const kitchenProducts: Product[] = [
       "/images/products/trendplain-oil-sprayer/Gemini_Generated_Image_oxenm8oxenm8oxen.jfif"
     ],
     isTop: true
+  },
+  {
+    id: "fullstar-pro-vegetable-chopper",
+    slug: "fullstar-pro-original-vegetable-chopper-spiralizer",
+    category: "Kitchen Finds",
+    rank: "Best Seller Pick",
+    badgeText: "All-in-1 Prep Tool",
+    score: "4.8",
+    ratingText: "4.8 out of 5",
+    reviewCount: "115,400",
+    price: "$49.99",
+    originalPrice: "$59.99",
+    name: "Fullstar Pro Original Vegetable Chopper & Spiralizer",
+    fullName: "Fullstar Pro Original Vegetable Chopper & Spiralizer, All-in-1 Kitchen Tool - Heavy Duty Onion Chopper, Dicer & Slicer Container",
+    capacity: "1.2 L Catch Tray Container",
+    material: "Rust-Resistant 420 Stainless Steel Blades & BPA-Free ABS",
+    functionality: "Dicing, Chopping, Julianne Slicing & Spiralizing",
+    compatibility: "Onions, Tomatoes, Peppers, Carrots, Potatoes, Zucchini",
+    cleaning: "Includes Cleaning Brush & Top-Rack Dishwasher Safe",
+    affiliateUrl: "https://amzn.to/4dn0Ylk",
+    summary: "The ultimate meal prep time saver. Chop, dice, slice, and spiralize onions, vegetables, and fruits in seconds with ultra-sharp 420 stainless steel interchangeable blades and a large 1.2L catch tray container.",
+    descriptionParagraphs: [
+      "Simplify your kitchen prep work with the Fullstar Pro Original Vegetable Chopper & Spiralizer. Featuring 4 interchangeable heavy-duty stainless steel blades, this all-in-1 tool effortlessly transforms whole onions, peppers, cucumbers, and potatoes into perfectly uniform diced cubes or spiral ribbons in one swift motion.",
+      "The integrated 1.2-liter catch tray keeps your kitchen counter clean and organized while catching chopped ingredients directly below the blades. A soft-grip TPU handle offers comfortable leverage, while the non-skid rubber base prevents slipping during vigorous chopping.",
+      "Cleaning up is quick and safe thanks to the included cleaning scrapers and finger guard safety holder. All components are constructed from 100% BPA-free food-grade plastic and are top-rack dishwasher safe."
+    ],
+    highlights: [
+      "4 Interchangeable Blades: Small dice, large dice, julienne spiralizer, and ribbon blade",
+      "Razor-Sharp 420 Stainless Steel: Heavy duty blades slice through tough vegetables effortlessly",
+      "Catch Container Tray (1.2L): Holds prepped vegetables directly to minimize countertop mess",
+      "Safety Finger Guard & Scraper: Comes with protective hand guard and specialized cleaning tools",
+      "Compact Space Saver: All blades store neatly inside the container when not in use"
+    ],
+    specs: [
+      { label: "Capacity", value: "1.2 Liters" },
+      { label: "Blade Material", value: "420 German Grade Stainless Steel" },
+      { label: "Body Material", value: "Heavy-Duty BPA-Free ABS Plastic" },
+      { label: "Included Attachments", value: "4 Blades, Finger Guard, Cleaning Brush, Scraper" },
+      { label: "Care Instructions", value: "Top-rack dishwasher safe" }
+    ],
+    images: [
+      "/images/products/fullstar-vegetable-chopper/WhatsApp Image 2026-09-04 at 11.00.05 PM.jpeg",
+      "/images/products/fullstar-vegetable-chopper/Gemini_Generated_Image_ju1rkoju1rkoju1r.jfif",
+      "/images/products/fullstar-vegetable-chopper/Gemini_Generated_Image_nylsxenylsxenyls.jfif",
+      "/images/products/fullstar-vegetable-chopper/Gemini_Generated_Image_unkv1eunkv1eunkv.jfif"
+    ],
+    isTop: false
   }
 ];
